@@ -16,7 +16,7 @@ const NewArival = async () => {
   return (
     <div className="wrapper !items-start flex-col py-16">
         <h2 className="heading2">New Arrivals. <span>REY backpacks & bags</span></h2>
-        <div className="card-2 w-fullx">
+        <div className="card-2 w-full">
             {data.slice(0, 4).map((item : Data) => (
                 <NewArivalCard
                     key={item.id}

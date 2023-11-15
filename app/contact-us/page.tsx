@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import InnerBanner from "@/util/InnerBanner";
+import OffersCart from "@/components/homepage/OffersCart";
 const Home = () => {
   const route = useRouter();
   useEffect(() => {
@@ -36,21 +37,44 @@ const Home = () => {
         <div className="w-6/12">
           <div className="form-box">
             <div className="input-field pb-4">
-              <label htmlFor="firstname" className="block font-semibold pb-2">First Name</label>
-              <input id="firstname" className="input input-bordered w-full" type="text" placeholder="Example Hasib" />
+              <label htmlFor="firstname" className="block font-semibold pb-2">
+                First Name
+              </label>
+              <input
+                id="firstname"
+                className="input input-bordered w-full"
+                type="text"
+                placeholder="Example Hasib"
+              />
             </div>
             <div className="input-field pb-4">
-              <label htmlFor="email" className="block font-semibold pb-2">Email address</label>
-              <input id="email" className="input input-bordered w-full" type="text" placeholder="Example info@gmail.com" />
+              <label htmlFor="email" className="block font-semibold pb-2">
+                Email address
+              </label>
+              <input
+                id="email"
+                className="input input-bordered w-full"
+                type="text"
+                placeholder="Example info@gmail.com"
+              />
             </div>
             <div className="input-field pb-4">
-              <label htmlFor="message" className="block font-semibold pb-2">Message</label>
-              <textarea id="message" className="textarea textarea-bordered w-full" placeholder="Type your query"></textarea>
+              <label htmlFor="message" className="block font-semibold pb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                className="textarea textarea-bordered w-full"
+                placeholder="Type your query"></textarea>
             </div>
             <button className="btn btn-primary text-white">Submit</button>
           </div>
         </div>
       </div>
+      
+      <section className="offer-sec bg-gradient-to-tl from-amber-100">
+        <OffersCart />
+      </section>
     </>
   );
 };

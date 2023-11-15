@@ -1,23 +1,28 @@
 import Link from "next/link";
-import React from "react";
+import { MdOutlineAccountCircle, MdFavoriteBorder } from "react-icons/md";
+import { FiHelpCircle } from "react-icons/fi";
+import { IoMdLogOut } from "react-icons/io";
+
+import { GoListOrdered } from "react-icons/go";
+
 
 const Account = () => {
   return (
     <ul className="dropdown">
       <li>
-        <Link href="#">My Account</Link>
+        <Link href="#"><MdOutlineAccountCircle /> My Account</Link>
       </li>
       <li>
-        <Link href="#">My Order</Link>
+        <Link href="#"><GoListOrdered /> My Order</Link>
       </li>
       <li>
-        <Link href="#">Whishlist</Link>
+        <Link href="#"><MdFavoriteBorder /> Whishlist</Link>
       </li>
       <li>
-        <Link href="#">Help</Link>
+        <Link href="#"><FiHelpCircle /> Help</Link>
       </li>
       <li>
-        <a href="#">Logout</a>
+        <a href="#"><IoMdLogOut /> Logout</a>
       </li>
     </ul>
   );
